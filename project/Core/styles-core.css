@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'noahregular';
+      src: url('font/fontsfree-net-fontfabric-noahregular.woff'); /* IE9 Compat Modes */
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'alice';
+      src: url('font/alice/alice-regular.woff'); /* IE9 Compat Modes */
+      font-style: normal;
+  }
+
+
+body{
+    background-color: white;/***#f7f7f5***/
+    padding: 10px;
+}
+
+html {
+    overflow-y: scroll;
+  }
+.center{  
+    width: 52%;
+    margin: auto;
+    
+    
+   }
+
+nav{
+
+    font-family: 'noahregular';
+    font-size: 1.1rem;
+    
+}
+
+.Details1{
+    text-align: center;
+    
+}
+
+
+.Tool .Tip {
+  visibility: hidden;
+
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+
+  
+  /* Position the tooltip */
+  position: relative;
+ 
+  bottom: -25%;
+  left: 8%;
+  margin-left:-100px;
+}
+
+.Tool:hover .Tip{
+  font-weight: bold;
+  visibility: visible;
+}
+
+.Details{
+    text-align: left;
+    font-family: 'noahregular';
+    font-size: 20px;
+    line-height: 1.1;
+    word-spacing: .5px;
+}
+.Title{
+    font-weight: bold;
+    font-family: 'alice';
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.ArticleDesc{
+    font-size:15px;
+    font-family: 'alice';
+    font-weight: normal;
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+img{
+    width:50%;
+    height: auto;
+}
+
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: solid 1px black;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(255, 246, 228);
+   
+  }
