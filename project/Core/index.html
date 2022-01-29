@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-core.css">
+    <script type="text/javascript" src="javascript.js"></script>
+   
+</head>
+<body>
+    <nav>
+        <b>> A Visualization of Core Income</b>
+        <br>
+        from <a href="espn.com" style="text-decoration: underline; color: black;"> William Wang</a> 
+     </nav>
+    <div class="center">
+
+      <section class="Details1">
+        <h1 class="Title">
+            A Visualization of Core Income
+         </h1>
+         <h1 class="ArticleDesc">January 15, 2022 * William Wang * <span style="font-style:italic">Visualize Financial Statements</span></h1>
+        <section class="Details">
+        
+        <p>When you work long enough in a high growth company, you tend to hear a lot about the concept of <b>"Core Income"</b>, which
+             measures the 
+            earnings generated from the principal business lines for the company. The reason this concept holds weight at young, fast growing companies
+            is that investors are often keen on understanding the true value of these newer, less understood businesses. And to do that, they need to
+            understand not only how much money the company makes over a year, but how much of those earnings are <b><em>sustainable and principal to the company</em></b> over the long term.
+            <br>
+            <br>
+            In other words, 
+            what's real, and what's noise? What happened this year that's likely to happen next year?
+            <br>
+            <br>
+            I'll give an example. A company might change its inventory valuation method from 
+            FIFO to LIFO, and retroactively changes it Cost of Goods Sold 
+            in previous years to reflect this change. 
+            <br>
+            <br>
+            In the current year, the company would make an adjusting entry to recognize the gain or loss for the change in the method,
+            which would alter Net Income and its cascading domino tiles we call financial ratios that affect how financiers view investments.
+            <br>
+            <br>
+            But this wouldn't be viewed as Core Income for the company. Unless the company was in the business of annually adjusting its accounting policies (which, by the way, would only
+            only infuriate its entire accounting team), the adjustment would be supplementary income.
+            <br>
+            <br>
+            With some <span style="color:rgb(40, 112, 245);font-weight:bold;text-decoration: underline;">HTML</span> and <span style="color:rgb(252, 58, 58); font-weight:bold;text-decoration:underline">CSS</span>, I"ve created a visualization that walks down Core Income to Supplementary Income, all the way down to Comprehensive Income. Clicking on each box will give an explanation of
+            each line item.
+            <!--https://www.journalofaccountancy.com/issues/2007/feb/changesinaccountingforchanges.html-->
+            
+        </p>
+
+        <p>Core Income:</p>
+        <!--Core Gross Margin-->
+        <button type="button" class="collapsible">Core Sales Revenue</button>
+        <div class="content">
+            <p>This is the <b>revenue from the main lines of a business</b>. If an apple cider making company listed out it's core income on its income statement, it would be cider making (and ancillary sales of apples).
+                It probably wouldn't list its gains on investments of NFTs, however.
+            </p>
+        </div>
+        <button type="button" class="collapsible">(-) Core Cost of Sales</button>
+        <div class="content">
+            <p>This is the cost of Sales that is incurred to <b>manufacture core goods/deliver services.</b> Back to the cider making company example - You need apples to make cider, your core revenue, so that would be a COGS.</p>
+        </div>
+        <button type="button" class="collapsible" style="background:#ceecfd"><b>(=) Core Gross Margin</b></button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <!--Core Operating Income from Sales-->
+        <button type="button" class="collapsible">(-) Core Operating Expenses</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <!--Core Operating Income-->
+        <button type="button" class="collapsible" style="background:#ceecfd"><b>(=) Core Operating Income</b></button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <!--Unusual items-->
+        <button type="button" class="collapsible">(-) Asset Write Downs</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button type="button" class="collapsible">(+-) Profits and lsoses from asset sales</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button type="button" class="collapsible">(+-) Extraordinary Operating Items</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button type="button" class="collapsible">(+-) Accounting Changes</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button type="button" class="collapsible">(+-)  Unrealized Gains and Losses on Equity Investments</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button type="button" class="collapsible">(+-) Other </button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button type="button" class="collapsible" style="background:#ceecfd"><b>(=) Comprehensive Operating Income</b></button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+       
+        
+      
+
+        
+        </div>
+    </section>
+        </section>
+        <script type="text/javascript" src="javascript.js"></script>
+
+    </div>
+</body>
+</html>
