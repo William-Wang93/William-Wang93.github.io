@@ -1,0 +1,198 @@
+
+body{
+  background-color: white;
+  
+}
+
+
+.center{  
+ width: 80%;
+ margin: auto;
+ 
+}
+
+header{
+ border-bottom: 2px solid black;
+ display: flex;
+ justify-content: center;
+    
+}
+nav {
+    height: 40px;
+    
+    
+    align-items: center;
+   
+    
+    margin-left: auto;
+    margin-right: auto;
+    /***
+    color: black;
+    font-weight:bold;
+    font-size:1.7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    ***/
+  }
+
+  .Logo{
+    width: 250px;
+    font-weight:bold;
+    font-size: 1.3rem;
+  }
+  .Socials {
+    width: 100%;
+    display: flex;
+ 
+    justify-content:end;
+    }
+  .Socials a{
+    margin: 5px;
+  }
+  a img {
+      width: 20px;
+      height: 20px; }
+/***
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+  }
+  li a:hover:not(.active) {
+    background-color: #f5fbff;
+
+  }
+***/
+/**Introduction Section***/
+
+.Burh{
+  display: flex;
+  justify-content: center;
+}
+.Hello{
+  width: 90%;
+  text-align: left;
+}
+.aligned{
+  display: flex;
+  align-items: center;  
+}
+
+.aligned img{
+  
+  min-height:200px;
+  min-width: 200px;
+}
+
+span{
+  font-size:18px;
+  font-weight: normal;
+ 
+  
+}
+section{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 2%;
+
+}
+  
+/*** CSS Grid Section ***/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 2%;
+  }
+
+  .grid div:hover {
+    transform: scale(1.2);
+    transition-duration: .3s;
+  }
+  
+
+  .grid > div {
+    background: #f5fbff; /***fcfcf5***/
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+  }
+  body {
+    margin: 2rem;
+    font: 12px system-ui;
+  }
+
+  img{
+    max-height:100%;
+    max-width: 100%;
+    width: auto;
+    height:auto;
+  }
+
+ 
+  .project img{
+    height: 180px;
+    margin-left:auto;
+    margin-right: auto;
+    border: solid 1.5px black;
+    border-radius: 5px;
+  }
+
+  .Title{
+    font-size: 1rem;
+  }
+ 
+  .skills{
+    font-style: italic;
+  }
+
+  @media  screen and (max-width: 600px){
+    span{
+      font-size:15px;
+    }
+
+    .aligned img{
+      min-height:150px;
+      min-width:150px;
+    }
+
+    
+
+  }
+
+  @media  screen and (max-width: 500px){
+    span{
+      
+      font-size:15px;
+    }
+    .aligned img{
+      min-height:120px;
+      min-width:120px;
+      display: none;
+    }
+    
+
+ 
+
+  }
