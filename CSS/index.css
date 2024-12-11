@@ -110,6 +110,7 @@ li a.navbar:hover{
   .col {
     flex: 25%;
     padding-bottom: 2%;
+    padding-right: 1%;
  
     
    
@@ -151,8 +152,8 @@ li a.navbar:hover{
   }
 
   .col img{
-     width: 85%;
-     height: 60%;
+     width: 290px;
+     height: 480px;
      border-radius: 25px;
     
   }
@@ -168,7 +169,15 @@ li a.navbar:hover{
    
   }
 
+ 
+
+  @media screen and (max-width: 1500px) {
   
+    
+  }
+
+
+
   @media screen and (max-width: 992px) {
     .col{
       flex: 50%;
@@ -180,6 +189,9 @@ li a.navbar:hover{
     border-radius: 25px;
    
  }
+
+
+
   }
   
   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -197,4 +209,8 @@ li a.navbar:hover{
         border-radius: 25px;
        
      }
+
+    
+
+     
   }
