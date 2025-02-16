@@ -152,8 +152,9 @@ li a.navbar:hover{
   }
 
   .col img{
+     display:none;
      width: 290px;
-     height: 480px;
+     height: 290px;
      border-radius: 25px;
     
   }
