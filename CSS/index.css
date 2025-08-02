@@ -13,7 +13,7 @@ body {
     
     margin: 0;
     padding:0;
-    background-color: #eeefe4;
+    background-color: #f3f3ef;
  
      
 }
@@ -22,7 +22,7 @@ body {
 .header{
     display: flex;
     flex-direction: column;
-    background-color: #eeefe4;
+    background-color: #f3f3ef;
     color:black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-left: 10%;
