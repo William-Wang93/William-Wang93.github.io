@@ -224,6 +224,16 @@ li a.navbar:hover{
    
  }
 
+   h2 {
+    font-size: 95%;
+   } 
+
+   .header{ 
+    font-size: 90%;
+   } 
+   .flex-grid{
+    font-size: 90%;
+   }
 
 
   }
