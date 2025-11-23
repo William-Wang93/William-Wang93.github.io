@@ -163,7 +163,7 @@ a:hover {
 .entry-thumb img,
 .entry-thumb video {
   width: 100%;        /* take the full width of the thumb container */
-  height: auto;       /* scale height automatically */
+  height: 130px;       /* scale height automatically */
   border-radius: 6px;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, 0.06);
