@@ -1,222 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Wang</title>
-    <link href='CSS/index.css' rel='stylesheet' />
+  <meta charset="UTF-8" />
+  <title>William Wang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Short one-line description about you."
+  />
+
+  <!-- Optional: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="CSS/index.css" />
 </head>
+
 <body>
-   <!--Banner section-->
-   <div class="container">
-    
-   <div class="header">
-     <h1>Hi! I'm William</h1>
-     <ul>
-        <li><a class="navbar" href="https://inmotion.substack.com/">Substack</a></li>
-        <li><a > / </a></li>
-        <li><a class="navbar"  href="https://x.com/whwang1_">Twitter</a></li>
-        <li><a > / </a></li>
-        <li><a class="navbar" href="https://curius.app/william-wang">Curius </a></li>
-        <li><a > / </a></li>
-        <li><a class="navbar" href="mailto:whw54@cornell.edu">Email me! </a></li>
-        <li><a > / </a></li>
-        <li><a class="navbar" href="https://www.linkedin.com/in/williamwang1963/">Linkedin</a></li>
+  <div class="page-wrapper">
+    <!-- Top Nav -->
+    <header id="header">
+      <a href="#profile-intro">Home</a>
+      <a href="#updates">Updates</a>
+      <a href="#projects">Projects</a>
+      <a href="#writings">Writings</a>
+      <!-- <a href="#teaching">Teaching</a>-->
+    </header>
+
+    <!-- Profile -->
+    <section id="profile">
+      <div id="profile-pic">
+        <!-- Replace profile.jpg with your own image file -->
+        <img src="Resources/Profile.jpg" alt="Profile picture" />
+      </div>
+
+      <div id="profile-intro">
+        <div id="profile-name">William Wang</div>
+        <a href="mailto:whw54@cornell.edu"><div id="profile-email">whw54@cornell.edu</div></a>
+
+        <p>
+         I currently work as a Corporate Development Associate at <b>Synthica Energy</b>, a startup that develops renewable natural gas. 
+         I also write about being global finance, investing and emerging industries at my substack <a href="https://inmotion.substack.com/"><b>"In Motion"</b></a>. 
+        </p>
+       <br>
+        <p>
+        Previously, I was a senior analyst at <b>JPMorgan Chase</b> in their Corporate Client Banking division, where I focused on aerospace, industrial, and defense companies, and a finance analyst at <b>Nexamp</b>, a fast growing community solar company, where I worked on cross-functional finance initiatives. 
+        I began my career at <b> Ernst and Young </b>, where I got my CPA; before that, I studied at <b>Cornell University</b> to get my degree in finance. 
+        </p>
+
+        <div>
+          <a href="https://x.com/whwang1_">Twitter</a> /
+          <a href="https://inmotion.substack.com/">Substack</a> /
+          <a href="https://www.linkedin.com/in/williamwang1963/">Linkedin</a> 
+          <!--<a href="cv.pdf">CV</a>-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Updates -->
+    <div class="section" id="updates">
+      <h1>Updates</h1>
+      <ul>
+        <li>
+          <b>September 2024</b> Started working at <b>Synthica Energy</b>, where I helped a 20 man startup scale up to operationalize $100mm anaerobic digestion projects
+          <!--<a href="#">Project / Role</a>.-->
+        </li>
+        <li>
+          <b>July 2023</b> Joined <b>JPMorgan's</b> Leverage finance group, where I tackled debt financings for sub-prime companies. Lots of decks, models, slop bowls and late nights
+          <!--<a href="#">Lab / Company</a>. -->
+        </li>
+        <li>
+          <b>July 2021</b> Became a part of <b>Nexamp's </b> FP&A group. We all cheered in our pool lounge when the IRA was passed
+          <!--<a href="#">Paper or Article Title</a>. -->
+        </li>
+        <li>
+          <b>September 2020</b> Realized my dream of becoming an auditor at Ernst and Young. A year later, unrealized my dreams
+        </li>
       </ul>
-     
-     <p>
-        I currently  work as a Corporate Development Associate at <a href="https://synthica.com/" style="text-decoration: none;color: black;" ><b>Synthica Energy</b></a>, a 
-        startup that develops renewable natural gas. 
-        I also write about being a startup operator at my substack <a href="https://inmotion.substack.com/" style="text-decoration: none;color: black;"><b>"In Motion"</b></a>.
-        <br>
-        <br>
-         Previously, I was a senior analyst at <b>JPMorgan Chase</b> in their Corporate Client Banking division, 
-        where I focused on aerospace, industrial, and defense companies, and a
-        finance analyst at <b>Nexamp</b>, 
-        a fast growing community solar company, where I worked on cross-functional finance initiatives. 
-        I began my career at <b>Ernst and Young</b>, where I got my CPA; 
-        before that, I studied at Cornell University to get my degree in finance. 
-       <br>
-       <br>
-        In my free time, I'm trying to work my way around Hilary Mantel and add to my photos collection!
-    </p>
+    </div>
 
-   </div>
-<div class="bottom">
-   <div class="gallery">
+    <div class="divider"></div>
 
-    <h2>Projects</h2>
-<div class="flex-grid">
+    <!-- projects -->
+    <section class="section" id="projects">
+      <h1>Projects</h1>
 
-        <div class="col">
-        <li> <h3> <a href="https://www.dropbox.com/scl/fi/inuwkzb6f9a9u4vtvtmt1/Poseidon_Deck_WW.pdf?rlkey=eycotcwaphw94ocqcebl2mby9&st=unisp44x&dl=1">(★) GTM case study for Anduril </a> </h3></li>
+      <div class="entry">
+        <div class="project-gif">
+          <img src="Resources/disco-stu-trends-if-these-trends-continue.gif" alt="macro dashboard" />
         </div>
-
-        
-        <div class="col">
-        <li> <h3> <a href="https://macro-dashboard-c7tkm2gh2jes2wp5uawdkf.streamlit.app/">(★) Macro indicators dashboard </a> </h3></li>
-        </div>
-      </div>
-    
-<br> 
-
-    <h2>Writings</h2>
-
-    <div class="flex-grid">
-
-       <div class="col">
-        <li> <h3> <a href="https://inmotion.substack.com/p/a-year-around-the-sun-at-my-startup">(★) A year around the sun at my startup job</a> </h3></li>
-         
-        </div>
-
-
-        <div class="col">
-        <li> <h3> <a href="https://inmotion.substack.com/p/the-price-is-wrong-why-renewable">(★) Why renewable energy growth is lagging</a> </h3></li>
-         
-        </div>
-
-
-         <div class="col">
-        <li> <h3> <a href="https://inmotion.substack.com/p/some-thoughts-on-my-post-college">(★) Thoughts on my post college career</a> </h3></li>
-         
-        </div>
-
-        <div class="col">
-        <li> <h3> <a href="https://inmotion.substack.com/p/on-function-and-fracture">On function and fracture</a> </h3></li>
-         
-        </div>
-        
-        <div class="col">
-        <li> <h3> <a href="https://inmotion.substack.com/p/an-autopsy-of-northvolt">An autopsy of Northvolt</a> </h3></li>
-            <!-- <p>Not the best use of $15 billion</p> -->
-        </div>
-        
-        <div class="col">
-            <li> <h3> <a href="https://inmotion.substack.com/p/antares-industries">Going nuclear: Antares Industries</a> </h3></li>
-            <!--<p>The history and future of nuclear</p>-->
-        </div>
-        
-        <div class="col">
-           <li> <h3> <a href="https://inmotion.substack.com/p/sunpower-the-rise-and-fall-of-a-solar">A history of the rise and fall of SunPower</a> </h3></li>
-            <!--<p>The history and future of nuclear</p>-->
-        </div>
-        
-        <div class="col">
-           <li>  <h3> <a href="https://inmotion.substack.com/p/the-future-of-natural-gas">The future of natural gas</a> </h3> </li>
-            <!--<p>The history and future of nuclear</p>-->
+        <div class="entry-body">
+          <a href="https://macro-dashboard-c7tkm2gh2jes2wp5uawdkf.streamlit.app/" class="entry-title">
+            Macro indicators dashboard
+          </a>
+          <p>
+            <!--<b>Your Name</b>, Coauthor A, Coauthor B<br />-->
+            <!--<i>A live dashboard that highlights current inflation, 10yr yield, unemployment etc</i>-->
+          </p>
+          <p>
+         A live dashboard that highlights current inflation, 10yr yield, 2yr yield, unemployment data and other datapoints from the St.Louis Fed
+          </p>
+          <p class="entry-links">
+            <a href="https://macro-dashboard-c7tkm2gh2jes2wp5uawdkf.streamlit.app/">App</a><!--&nbsp;&nbsp;•&nbsp;&nbsp;-->
+           <!-- <a href="#">ArXiv</a>&nbsp;&nbsp;•&nbsp;&nbsp;
+            <a href="#">GitHub</a>-->
+          </p>
         </div>
       </div>
 
+     <div class="entry">
+        <div class="project-gif">
+          <img src="Resources/anduril drone.gif" alt="macro dashboard" />
+        </div>
+        <div class="entry-body">
+          <a href="https://www.dropbox.com/scl/fi/inuwkzb6f9a9u4vtvtmt1/Poseidon_Deck_WW.pdf?rlkey=eycotcwaphw94ocqcebl2mby9&st=unisp44x&dl=1" class="entry-title">
+            GTM deliverable for drone company
+          </a>
+          <p>
+            <!--<b>Your Name</b>, Coauthor A, Coauthor B<br />-->
+            <!--<i>A live dashboard that highlights current inflation, 10yr yield, unemployment etc</i>-->
+          </p>
+          <p>
+         Designed and operationalized the go-to-market, pricing, and cost-reduction strategy for a new wildfire-suppression drone, 
+            driving market entry, margin expansion (≈10% → 40%), and scale to ~$50M ARR. For personal display, repurposed this analysis under a mock name for confidentiality
+          </p>
+          <p class="entry-links">
+            <a href="https://www.dropbox.com/scl/fi/inuwkzb6f9a9u4vtvtmt1/Poseidon_Deck_WW.pdf?rlkey=eycotcwaphw94ocqcebl2mby9&st=unisp44x&dl=1">Download link</a><!--&nbsp;&nbsp;•&nbsp;&nbsp;-->
+           <!-- <a href="#">ArXiv</a>&nbsp;&nbsp;•&nbsp;&nbsp;
+            <a href="#">GitHub</a>-->
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <div class="flex-grid">
-        <div class="col">
-             <li> <h3> <a href="https://inmotion.substack.com/p/career-update-checking-in-with-renewable">Renewable natural gas</a> </h3></li>
-            <!--<p>The history and future of nuclear</p>-->
-        </div>
-        
-        <div class="col">
-            <li> <h3> <a href="https://inmotion.substack.com/p/some-intro-notes-on-the-grid">Notes from the class of Jesse Jenkins</a> </h3></li>
-            <!--<p>The history and future of nuclear</p>-->
-        </div>
-        
-        <div class="col">
-           <li> <h3> <a href="https://inmotion.substack.com/p/sizing-things-up">The climate problem</a> </h3></li>
-            <!--<p>The history and future of nuclear</p>-->
-        </div>
-    
+    <div class="divider"></div>
 
+    <!-- writings -->
+    <section class="section" id="writings">
+      <h1>Writings</h1>
+
+      <div class="entry">
+        <div class="entry-thumb">
+          <img src="Resources/sailboat.webp" alt="Project thumbnail 1" />
+        </div>
+        <div class="entry-body">
+          <a href="https://inmotion.substack.com/p/a-year-around-the-sun-at-my-startup" class="entry-title">
+            A year around the sun at my startup job
+          </a>
+          <p>
+            In my quest to be a better operator, I may have fallen in love with skyline chili
+          </p>
+          <p>
+            <b>November 2025</b>
+          </p>
+          <p class="entry-links">
+            <a href="https://inmotion.substack.com/p/a-year-around-the-sun-at-my-startup">Write-up </a><!--&nbsp;&nbsp;•&nbsp;&nbsp; -->
+            <!--<a href="#">GitHub</a>-->
+          </p>
+        </div>
       </div>
 
-<!--
-  <h1 id="Projects">Projects</h1>
-  <div class="flex-grid">
-    <div class="col">
-        <img src="Resources/Virgin Galactic.jpeg">
-           
-        <p><a class="navbar" href="https://www.dropbox.com/s/r9h0w7y9zznfumd/Valuation%20of%20Virgin%20Galactic.pdf?dl=1"> 
-            > A Valuation of Virgin Galactic</a>
-        </p>
+      <div class="entry">
+        <div class="entry-thumb">
+          <img src="Resources/fire.webp" alt="Project thumbnail 2" />
+        </div>
+        <div class="entry-body">
+          <a href="https://inmotion.substack.com/p/the-price-is-wrong-why-renewable" class="entry-title">Why Renewable Energy Growth is Lagging</a>
+          <p>
+            Hint: It's related to a lack of government coordination
+          </p>
+          <p>
+            <b>March 2025</b>
+          </p>
+          <p class="entry-links">
+            <a href="https://inmotion.substack.com/p/the-price-is-wrong-why-renewable">Write-up</a><!--&nbsp;&nbsp;•&nbsp;&nbsp;
+            <a href="#">GitHub</a> -->
+          </p>
+        </div>
+      </div>
 
-        <p style="width: 80%; padding-bottom: 10px; font-style: normal;"> 
-            As part of my training at EY in 2020, I dived into a valuation of Virgin Galactic, the space tourism company, using a DCF model. 
-            You can download a PDF of my work by clicking the link above (As a note, I would not use a DCF model today to value Virgin Galactic) 
-        </p>
+      <div class="entry">
+        <div class="entry-thumb">
+          <img src="Resources/cornell.webp" alt="Project thumbnail 2" />
+        </div>
+        <div class="entry-body">
+          <a href="https://inmotion.substack.com/p/some-thoughts-on-my-post-college" class="entry-title">Thoughts on my post-college career</a>
+          <p>
+            How a circuitous route 5 years after college has informed my career so far
+          </p>
+          <p>
+            <b>Aug 2025</b>
+          </p>
+          <p class="entry-links">
+            <a href="https://inmotion.substack.com/p/some-thoughts-on-my-post-college">Write-up</a><!--&nbsp;&nbsp;•&nbsp;&nbsp; 
+            <a href="#">GitHub</a> -->
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <p style="font-style: italic; padding-top: 0;">
-          Skills: Valuation, Writing
-        </p>
-   
-        
-    </div>
-    <div class="col">
-        <img src="Resources/Nexamp Panels.avif">
+    <div class="divider"></div>
 
-        
-            <p><a class="navbar" href="https://leafletheat.williamhwang.me/"> 
-                > Nexamp Geo Visualization</a>
-            </p>
-    
-            <p style="width: 80%; padding-bottom: 10px; font-style: normal;"> 
-                This is a geographic visualization of limited sample of projects that Nexamp has as of June 2021, and creates a heat map by KWs DC in power. These projects are mostly 
-                found in the Northeast, and supply power to grids such as NYSEG, Central Maine Power, Eversource etc. 
-            </p>
-    
-            <p style="font-style: italic; padding-top: 0;">
-              Skills: Data visualization, Writing
-            </p>
-        
-            
-       
-    </div>
-    <div class="col">
-        <img src="Resources/Ohtani.jpg">
-
-       
-            <p><a class="navbar" href="https://prospects.williamhwang.me/"> 
-                > Dynamic Baseball List</a>
-            </p>
-    
-            <p style="width: 80%; padding-bottom: 10px; font-style: normal;"> 
-                I hacked this together using javascript, to create an interactive list that lets you filter, expand, and collapse player burbs, while coming up with some fun icons to classify players. 
-                This was inspired by some of the fun lists posted by TheRinger, ESPN, etc the past few years. 
-            </p>
-    
-            <p style="font-style: italic; padding-top: 0;">
-              Skills: Front end coding, Writing
-            </p>
-        
-       
-    </div>
-    <div class="col">
-        <img src="Resources/Amboy crater.jpg">
-
-       
-            <p><a class="navbar" href="https://valcalculator.williamhwang.me/"> 
-                > Valuation Calculator</a>
-            </p>
-    
-            <p style="width: 80%; padding-bottom: 10px; font-style: normal;"> 
-                I created an interactive valuation model that values a new business line for a solar company. It implements a DCF model 
-                that takes inputs from customers acquired, revenue rate, cost of capital to come up with a $ value of the line. 
-            </p>
-    
-            <p style="font-style: italic; padding-top: 0;">
-              Skills: Valuation, Writing
-            </p>
-       
+    <!-- Teaching & Service -->
+     <!--
+    <section class="section" id="teaching">
+      <h1>Teaching &amp; Service</h1>
+      <ul>
+        <li>
+          <b>Teaching Assistant</b> – Course Name, Institution, Term
+        </li>
+        <li>
+          <b>Teaching Assistant</b> – Another Course, Term
+        </li>
+        <li>
+          <b>Reviewer</b> – Conference / Journal, Year
+        </li>
+        <li>
+          <b>Volunteer</b> – Event / Organization, Year
+        </li>
+      </ul>
+    </section>
+    -->
+    <div class="footer-note">
+      This website layout was inspired by simple academic homepages. Feel free
+      to customize and extend it.
     </div>
   </div>
--->
-  </div>
-
-</div>
-</div>
-
-
-
-    
- 
-     
-    
 </body>
 </html>

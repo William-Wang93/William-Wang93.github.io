@@ -1,263 +1,254 @@
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box; 
-   
+:root {
+  --accent: #003399;
+  --accent-soft: #e6ecff;
+  --text-main: #222;
+  --text-muted: #666;
+  --bg: #ffffff;
+  --divider: #dddddd;
+  --link: #c21f3a;
 }
 
-html,body { }
-
+* {
+  box-sizing: border-box;
+}
 
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding:0;
-    background-color: #dbeeff;
-    display: flex;
-    justify-content: center; /* centers horizontally */
-    
- 
-     
-}
-
-.container{
- margin: 0 auto;
-  padding: 2rem;
-  background-color: white;
-  max-width: 600px;
-  min-width: 400px;
-  width: 60%;
-  height: 100%;
- 
-
-    
-
-}
-.header{
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    background-color: rgb(255, 255, 255);
-    color:black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-top: 5%;
-    padding-bottom: 3%;
-
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 0.5rem;
+  margin: 0;
   padding: 0;
-  margin: 0 auto;
-  list-style: none;
-  width: 100%;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
 }
 
-li {
-   float: none;
-  white-space: nowrap;
-}
-
-li a {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-right: 12px;
+a {
+  color: var(--link);
   text-decoration: none;
-  color: black;
-  font-weight: normal;
 }
 
-li a.navbar {
-    display: block;
-    margin-top: 15px;
-    padding-bottom: 5%;
-    margin-bottom: 15%;
-    margin-right: 12px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background-image: linear-gradient(#000 0 0);
-    background-position: 0 100%; /*OR bottom left*/
-    background-size: 0% 2px;
-    background-repeat: no-repeat;
-    transition:
-      background-size 0.3s,
-      background-position 0s 0.3s; 
-  }
-
-  
-
-li a.navbar:hover{
-     background-position: 100% 100%; /*OR bottom right*/
-    background-size: 100% 2px;
-}
-
-.bottom{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    min-width: 40%; 
-   
-}
-.gallery{
-    background-color: rgb(255, 255, 255);
-    color:black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-bottom: 5%;
-    
-    
-}
-
-.gallery h2{
+a:hover {
   text-decoration: underline;
 }
 
-    
-.section h2{ float:left; ; padding-right: 1em;  }
+/* Container */
 
+.page-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
 
+/* Header nav */
 
+#header {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0.5rem 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
 
-  .flex-grid { 
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 0 0;
-   
+#header a {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: #444;
+}
+
+#header a:hover {
+  color: var(--accent);
+}
+
+/* Profile section */
+
+#profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: 1.75rem;
+}
+
+#profile-pic img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+#profile-intro {
+  flex: 1;
+  min-width: 260px;
+}
+
+#profile-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+  color: var(--accent);
+}
+
+#profile-email {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+#profile-intro p {
+  margin: 0.3rem 0;
+}
+
+#profile-intro > div a {
+  font-weight: 500;
+}
+
+/* Sections */
+
+.section {
+  padding-top: 2rem;
+}
+
+.section h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+}
+
+.divider {
+  border-top: 1px solid var(--divider);
+  margin: 2rem 0;
+}
+
+/* Updates */
+
+#updates ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#updates li {
+  margin-bottom: 0.4rem;
+  font-size: 0.98rem;
+}
+
+#updates b {
+  font-weight: 600;
+}
+
+/* Research / Projects cards */
+
+.entry {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+  align-items: flex-start;
+}
+
+.entry-thumb {
+  flex-shrink: 0;
+}
+
+.entry-thumb img,
+.entry-thumb video {
+  width: 210px;
+  max-width: 35vw;
+  height: 130px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.project-gif {
+  width: 210px;       /* whatever width you want */
+  height: 130px;      /* DON’T change this if you like the current height */
+  overflow: hidden;   /* hides the extra part instead of squeezing */
+  border-radius: 8px;
+}
+
+.project-gif img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* zooms/crops instead of squeezing */
+  object-position: bottom;    /* crops from the TOP → shows the bottom text */
+}
+
+.entry-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry-title {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1.02rem;
+  color: var(--text-main);
+}
+
+.entry-title:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.entry-body p {
+  margin: 0.25rem 0;
+  font-size: 0.96rem;
+}
+
+.entry-body i {
+  color: var(--text-muted);
+}
+
+.entry-links {
+  margin-top: 0.25rem;
+  font-size: 0.92rem;
+}
+
+/* Teaching list */
+
+#teaching ul {
+  list-style: circle;
+  padding-left: 1.5rem;
+}
+
+#teaching li {
+  margin-bottom: 0.4rem;
+}
+
+/* Footer */
+
+.footer-note {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 720px) {
+  #header {
+    gap: 1.2rem;
+    font-size: 0.8rem;
   }
 
-
-  .col {
-    flex: 100%;
-    padding-right: 1%;
-    padding-bottom: 0%;
-    margin: 0%;
-   
+  .entry {
+    flex-direction: column;
   }
 
-
-  h3 a{
-   text-decoration: none;
-    color: black;
+  .entry-thumb img,
+  .entry-thumb video {
+    width: 100%;
+    max-width: 100%;
   }
-
- li {
-  line-height: 1em;
-  padding: 0%;
-  margin:0%
-
- }
-  
-  .col p{
-    padding-right: 10px;
-    font-style: italic; 
-  }
-
-  .col li {
-     margin-left: 4%;
-     font-style: italic;
-  }
-  
-  .col h3{
-    margin:0%;
-    padding: 0%;
-    line-height: 0%;
-    background-image: linear-gradient(#000 0 0);
-    background-position: 0 100%; /*OR bottom left*/
-    background-size: 0% 2px;
-    background-repeat: no-repeat;
-    transition:
-      background-size 0.3s,
-      background-position 0s 0.3s; 
-    display: inline-block;
-  }
-
-  .col h3:hover {
-    background-position: 100% 100%; /*OR bottom right*/
-    background-size: 100% 2px;
-  }
-
-  #Projects{
-   padding-top: 2%;
-  }
-
-  .col img{
-     display:none;
-     width: 290px;
-     height: 290px;
-     border-radius: 25px;
-    
-  }
-
-
-  a.navbar {
-    display: block;
-    margin-bottom: 15px;
-    margin-right: 12px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-   
-  }
-
- 
-
-  @media screen and (max-width: 1500px) {
-  
-    
-  }
-
-
-
-  @media screen and (max-width: 992px) {
-    .col{
-     
-    }
-
-    
-  .col img{
-    display: none;
-    border-radius: 25px;
-   
- }
-
-   h2 {
-    font-size: 95%;
-   } 
-
-   .header{ 
-    font-size: 90%;
-   } 
-   .flex-grid{
-    font-size: 90%;
-   }
-
-
-  }
-
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-    /*
-  @media screen and (max-width: 600px) {
-    .flex-grid {
-      flex-direction: column;
-    }
-
-    .flex-grid-row{
-        flex-direction: column;
-    }
-
-    .col img{
-        display: none;
-        border-radius: 25px;
-       
-     }
-
-    
-
-     
-  }
-     */
+}
