@@ -105,7 +105,7 @@ a:hover {
 }
 
 #profile-intro p {
-   margin: 0.8rem 0;       /* was 0.3rem — tighter paragraph gaps */
+   margin: 0.08rem 0;       /* was 0.3rem — tighter paragraph gaps */
   line-height: 1.45;
 }
 
