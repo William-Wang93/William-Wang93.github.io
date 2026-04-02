@@ -261,4 +261,12 @@ a:hover {
     display: flex;
     justify-content: center;
   }
+
+  #profile-name,
+  #profile-email {
+    text-align: center;
+  }
+  #profile-intro > div:last-child {
+    text-align: center;
+  }
 }
