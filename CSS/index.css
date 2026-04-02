@@ -255,4 +255,9 @@ a:hover {
     width: 100%;
     max-width: 100%;
   }
+
+    #profile-pic {
+    width: 100%;
+    text-align: center;
+  }
 }
