@@ -75,7 +75,7 @@ a:hover {
   padding-top: 1.5rem;
   border-bottom: 1px solid var(--divider);
   padding-bottom: 1.75rem;
-  align-items: flex-end;
+  align-items: center;
 }
 
 #profile-pic img {
@@ -96,7 +96,7 @@ a:hover {
   font-weight: 700;
   margin-bottom: 0.15rem;
   color: var(--accent);
-  margin-top: 1.5rem;  
+
 }
 
 #profile-email {
