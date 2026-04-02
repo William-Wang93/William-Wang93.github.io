@@ -96,6 +96,7 @@ a:hover {
   font-weight: 700;
   margin-bottom: 0.15rem;
   color: var(--accent);
+  margin-top: 1.5rem;  
 }
 
 #profile-email {
